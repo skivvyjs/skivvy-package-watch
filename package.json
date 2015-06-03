@@ -1,0 +1,38 @@
+{
+  "name": "@skivvy/skivvy-package-watch",
+  "version": "0.0.1",
+  "description": "Watch files and folders for changes",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "test"
+  ],
+  "scripts": {
+    "prepublish": "npm test",
+    "test": "eslint index.js lib test && mocha --reporter spec"
+  },
+  "keywords": [
+    "skivvy-package"
+  ],
+  "author": "Tim Kendrick <timkendrick@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.2.0",
+    "chokidar": "^1.0.2",
+    "lodash.debounce": "^3.1.0"
+  },
+  "devDependencies": {
+    "@skivvy/project-base": "latest",
+    "chai": "^2.3.0",
+    "eslint": "latest",
+    "mocha": "^2.0.0",
+    "rewire": "^2.3.3",
+    "sinon": "^1.14.1",
+    "sinon-chai": "^2.7.0"
+  }
+}
