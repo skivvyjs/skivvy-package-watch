@@ -36,7 +36,7 @@ skivvy run watch
 | Name | Type | Required | Default | Description |
 | ---- | ---- | -------- | ------- | ----------- |
 | `files` | `string` `Array<string>` | Yes | N/A | Files and folders to watch (can contain globs) |
-| `task` | `string` `object` `function` `Array<string|object|function>` | Yes | N/A | Skivvy task(s) to run when files are changed |
+| `task` | `string` `object` `function` `Array<string,object,function>` | Yes | N/A | Skivvy task(s) to run when files are changed |
 | `debounce` | `number` | No | `0` | Batch multiple changes that occur within `debounce` milliseconds of each other |
 | `events` | `Array<string>` | No | `["add", "change", "unlink"]` | [Chokidar events](https://www.npmjs.com/package/chokidar#methods-events) to listen for |
 | `options` | `object` | No | `null` | [Chokidar options](https://www.npmjs.com/package/chokidar#persistence) |
