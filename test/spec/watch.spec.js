@@ -300,7 +300,7 @@ describe('task:watch', function() {
 			});
 		});
 
-		it.only('should log file changes (throttled)', function(done) {
+		it('should log file changes (throttled)', function(done) {
 			var watcher = task.call(mockApi, {
 				files: '/project/src/**/*',
 				task: 'build',
